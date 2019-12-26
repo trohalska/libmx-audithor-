@@ -6,6 +6,7 @@ OBJ = *.o
 CFLAGS = -std=c11 -Wall -Wextra -Werror -Wpedantic
 
 all: install clean
+	@cp src1/_main.c .
 
 install:
 	@cp $(addprefix src/, $(SRC)) .
@@ -14,9 +15,6 @@ install:
 	@ar rcs $(NAMEA) $(OBJ)
 	@mkdir obj
 	@mv $(OBJ) ./obj
-
-	@cp src1/_main.c .
-	@clang $(CFLAGS) libmx.a _main.c -o a
 
 uninstall: clean
 	@rm -rf $(NAMEA)
