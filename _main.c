@@ -1,12 +1,13 @@
 #include "inc/libmx.h"
 
-// int main() {
-//     char str[] = "**Good bye,**Mr.*Anderson.****";
-//     mx_printstr("\x1B[33m---mx_strsplit---\x1B[0m\n");
-//     mx_print_strarr(mx_strsplit(str, '*'), "---");
-//     mx_printstr("\n");
-//     return 0;
-// }
+int main() {
+    char str[] = "**Good bye,**Mr.*Anderson.****";
+    mx_printstr("\x1B[33m---mx_strsplit---\x1B[0m\n");
+    mx_print_strarr(mx_strsplit(str, '*'), "---");
+    mx_printstr("\n");
+
+    return 0;
+}
 
 // int main() {
 //     mx_printstr("\x1B[33m---mx_hex_to_nbr---\x1B[0m\n");
